@@ -1,0 +1,24 @@
+.notice{
+  z-index: 1400;
+  top: 24px;
+  left: auto;
+  right: 24px;
+  position: fixed;
+  .notice-notice{
+    margin-bottom: 1rem;
+    .notice-content{
+      min-width: 288px;
+      color: #fff;
+      display: flex;
+      height: 46px;
+      align-items: center;
+      font-size: 16px;
+      padding: 6px 16px;
+      border-radius: 4px;
+      box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+      .notice-tip{
+        margin-left: 10px;
+      }
+    }
+  }
+}

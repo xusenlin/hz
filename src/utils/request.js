@@ -1,9 +1,10 @@
 import Axios from "axios";
 import NProgress from "nprogress";
 import { ApiUrl } from "../config/url.js";
-import { ApiPrefix,ReqTimeout,ReqRetry,ReqRetryDelay } from "../config/index";
 import { getToken } from "../utils/dataStorage";
-import Snackbar from "../components/snackbar/index";
+import { errorNotice,warningNotice } from "../components/notice/index.js"
+import { ApiPrefix,ReqTimeout,ReqRetry,ReqRetryDelay } from "../config/index";
+
 
 const service = Axios.create({
   baseURL: ApiUrl + "/" + ApiPrefix,
@@ -33,18 +34,18 @@ service.interceptors.response.use(
       NProgress.done();
     }, 300);
     if (res.status !== 200) {
-      Snackbar.error("Status Code Is Not 200");
+      errorNotice("Status Code Is Not 200");
       return Promise.reject(res);
     } else {
       if (res.data.status !== true) {
-        Snackbar.warning(res.data.msg);
+        warningNotice(res.data.msg);
         return Promise.reject(res);
       }
       return res.data.data;
     }
   },
   error => {
-    Snackbar.error(error.message);
+    errorNotice(error.message);
     NProgress.done();
     return Promise.reject(error);
   }

@@ -1,4 +1,4 @@
-export const
+const
   ApiPrefix = "v1",
   ReqTimeout = 10000,
   ReqRetry = 4,
