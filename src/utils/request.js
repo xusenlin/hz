@@ -2,9 +2,13 @@ import Axios from "axios";
 import NProgress from "nprogress";
 import { ApiUrl } from "../config/url.js";
 import { getToken } from "../utils/dataStorage";
-import { errorNotice,warningNotice } from "../components/notice/index.js"
-import { ApiPrefix,ReqTimeout,ReqRetry,ReqRetryDelay } from "../config/index";
-
+import { errorNotice, warningNotice } from "../components/notice/index.js";
+import {
+  ApiPrefix,
+  ReqTimeout,
+  ReqRetry,
+  ReqRetryDelay
+} from "../config/index";
 
 const service = Axios.create({
   baseURL: ApiUrl + "/" + ApiPrefix,

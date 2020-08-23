@@ -1,5 +1,5 @@
 import Storage from "good-storage";
-import { UserInfoKey,UserTokenKey } from "../config/index.js";
+import { UserInfoKey, UserTokenKey } from "../config/index.js";
 
 export function getUserInfo(key = null) {
   let userInfo = Storage.get(UserInfoKey) || {};
@@ -19,7 +19,6 @@ export function getToken() {
 export function setToken(token) {
   return Storage.set(UserTokenKey, token);
 }
-
 
 export function removeToken() {
   return Storage.remove(UserTokenKey);

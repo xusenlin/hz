@@ -1,0 +1,28 @@
+.container {
+  width: auto;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.head {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    font-size: 20px;
+  }
+  .nav {
+    a {
+      margin: 0 6px;
+    }
+  }
+}
+.content {
+  min-height: calc(100vh - 100px);
+}
+.foot {
+  a {
+    margin: 0 6px;
+  }
+}
