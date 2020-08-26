@@ -22,7 +22,16 @@
   min-height: calc(100vh - 100px);
 }
 .foot {
+  margin-bottom: 20px;
   a {
     margin: 0 6px;
+  }
+}
+@media screen and (max-width: 860px){
+  .head {
+    flex-direction: column;
+    .logo{
+      margin-bottom: 10px;
+    }
   }
 }
