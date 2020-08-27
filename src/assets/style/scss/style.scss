@@ -35,7 +35,7 @@ a{
 }
 
 a:hover{
-  color: var(--primary);
+  color: var(--themeColor);
 }
 p{
   line-height: 2em;
@@ -53,12 +53,12 @@ p{
     height: 100vh;
     pointer-events: auto;
     .spinner-icon {
-      border-top-color: var(--primary);
-      border-left-color: var(--primary);
+      border-top-color: var(--themeColor);
+      border-left-color: var(--themeColor);
     }
   }
   .bar {
-    background: var(--primary);
+    background: var(--themeColor);
     z-index: 1032;
   }
 }

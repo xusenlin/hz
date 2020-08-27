@@ -1,16 +1,31 @@
 import React from "react";
+import { yuanQu } from "../../api/yuanQu.js"
+import Poetry from "../../components/poetry/index.js";
 import Paginate from "../../components/paginate/index.js";
-
-export default function YuanQu() {
-  return (
-    <div>
-      <div>元曲</div>
-      <Paginate
-        pageCount={1000}
-        change={e => {
-          console.log(e);
-        }}
-      />
-    </div>
-  );
+export default class YuanQu extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      data:{list:[]}
+    };
+  }
+  componentDidMount() {
+    this.getList()
+  }
+  getList(pageNum = 1){
+    yuanQu({pageNum}).then(r=>{
+      this.setState({data:r})
+    }).catch(()=>{})
+  }
+  render() {
+    return (
+      <div>
+        <Poetry title="元曲" list={this.state.data.list}/>
+        <Paginate
+          pageCount={this.state.data.totalPage}
+          change={num => {this.getList(num)}}
+        />
+      </div>
+    );
+  }
 }

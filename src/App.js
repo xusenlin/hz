@@ -17,3 +17,5 @@ function App() {
 }
 
 export default App;
+
+//document.documentElement.style.setProperty("--themeColor","#AAA")
