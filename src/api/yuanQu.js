@@ -11,3 +11,15 @@ export function yuanQu(params) {
     params: params
   });
 }
+/**
+ * @param params
+ * @returns {AxiosPromise}
+ */
+export function favour(params) {
+  return request({
+    closeLoading:true,
+    url: "/yq/favour",
+    method: "get",
+    params: params
+  });
+}

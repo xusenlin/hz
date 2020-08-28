@@ -23,7 +23,9 @@ service.defaults.retryDelay = ReqRetryDelay;
 
 service.interceptors.request.use(
   config => {
-    NProgress.start();
+    if (!config.closeLoading) {
+      NProgress.start();
+    }
     config.headers["Authorization"] = getToken() || "";
     return config;
   },
@@ -36,7 +38,7 @@ service.interceptors.response.use(
   res => {
     setTimeout(() => {
       NProgress.done();
-    }, 300);
+    }, 100);
     if (res.status !== 200) {
       errorNotice("Status Code Is Not 200");
       return Promise.reject(res);

@@ -1,16 +1,12 @@
 import React from "react";
-import Paginate from "../../components/paginate/index.js";
 
 export default function About() {
   return (
     <div>
-      <div>关于</div>
-      <Paginate
-        pageCount={1000}
-        change={e => {
-          console.log(e);
-        }}
-      />
+      <h1>关于</h1>
+      <div>
+        <p></p>
+      </div>
     </div>
   );
 }

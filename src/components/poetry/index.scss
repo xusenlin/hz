@@ -20,12 +20,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 600px;
+        padding: 0 10px;
         justify-content: center;
         align-items: center;
+        margin-bottom: 40px;
         .paragraph{
-          margin-top: 20px;
+          margin: 20px 0;
           letter-spacing: .3em;
-
         }
       }
       &:after {
@@ -33,6 +34,7 @@
         display: block;
         margin: 40px auto 80px;
         width: 10%;
+        opacity: .1;
         height: 2px;
         background: var(--themeColor);
         text-align: center;

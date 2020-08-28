@@ -1,7 +1,7 @@
 .warp{
   margin-top: 48px;
   min-height: calc(100vh - 256px);
-  .chapter{
+  .chapters{
     margin: 20px 0 80px;
     padding: 0;
     li{
@@ -9,23 +9,20 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      .title{
+      .chapter{
         font-weight: bold;
-      }
-      .author{
-        font-size: 13px;
       }
       .paragraphs{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 600px;
-        justify-content: center;
         align-items: center;
+        max-width: 90%;
         .paragraph{
           margin-top: 20px;
           letter-spacing: .3em;
-
+          text-align: left;
+          text-indent: 2em;
         }
       }
       &:after {

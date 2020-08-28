@@ -3,7 +3,7 @@ import TangShi from "../views/tangShi";
 import SongCi from "../views/songCi";
 import YuanQu from "../views/yuanQu";
 import LunYu from "../views/lunYu";
-import YouMengYing from "../views/youMengYing";
+// import YouMengYing from "../views/youMengYing";
 import SiShuWuJing from "../views/siShuWuJing";
 
 export default [
@@ -32,21 +32,16 @@ export default [
     path: "/lun_yu",
     component: LunYu
   },
-  {
-    title: "幽梦影",
-    path: "/you_meng_ying",
-    component: YouMengYing
-  },
-  {
-    title: "手写",
-    path: "/shou_xie",
-    component: YouMengYing
-  },
-  {
-    title: "视频",
-    path: "/video",
-    component: YouMengYing
-  },
+  // {
+  //   title: "幽梦影",
+  //   path: "/you_meng_ying",
+  //   component: YouMengYing
+  // },
+  // {
+  //   title: "其他",
+  //   path: "/other",
+  //   component: YouMengYing
+  // },
   {
     title: "关于",
     path: "/about",

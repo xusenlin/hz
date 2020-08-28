@@ -1,0 +1,19 @@
+.star-btn{
+  display: inline-block;
+  padding: 4px 20px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  background: var(--themeColor);
+  border: 2px solid var(--themeColor);
+  text-decoration: none;
+  border-radius: 2px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  &:hover{
+    background: #fff;
+    color: var(--themeColor);
+  }
+}

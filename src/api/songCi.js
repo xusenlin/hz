@@ -11,3 +11,15 @@ export function songCi(params) {
     params: params
   });
 }
+/**
+ * @param params
+ * @returns {AxiosPromise}
+ */
+export function favour(params) {
+  return request({
+    closeLoading:true,
+    url: "/sc/favour",
+    method: "get",
+    params: params
+  });
+}

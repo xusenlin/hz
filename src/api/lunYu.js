@@ -4,9 +4,9 @@ import request from "../utils/request.js";
  * @param params
  * @returns {AxiosPromise}
  */
-export function siShuWuJing(params) {
+export function lunYu(params) {
   return request({
-    url: "/sswj",
+    url: "/ly",
     method: "get",
     params: params
   });
@@ -18,7 +18,7 @@ export function siShuWuJing(params) {
 export function favour(params) {
   return request({
     closeLoading:true,
-    url: "/sswj/favour",
+    url: "/ly/favour",
     method: "get",
     params: params
   });
