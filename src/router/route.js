@@ -1,5 +1,6 @@
 import About from "../views/about";
 import TangShi from "../views/tangShi";
+import SongShi from "../views/songShi";
 import SongCi from "../views/songCi";
 import YuanQu from "../views/yuanQu";
 import LunYu from "../views/lunYu";
@@ -11,6 +12,11 @@ export default [
     title: "唐诗",
     path: "/tang_si",
     component: TangShi
+  },
+  {
+    title: "宋诗",
+    path: "/song_shi",
+    component: SongShi
   },
   {
     title: "宋词",

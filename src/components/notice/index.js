@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { successIcon, errorIcon, infoIcon, warningIcon } from "./icon.js";
+import { successIcon, errorIcon, infoIcon, warningIcon } from "../svgIcon/icon.js";
 import Notification from "rc-notification/es/index";
 
 let N;

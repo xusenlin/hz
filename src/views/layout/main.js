@@ -2,8 +2,10 @@ import "./index.scss";
 import React from "react";
 import HeadNav from "./head.js";
 import Foot from "./foot.js";
+import ThemeBtn from "../../components/themeBtn/index.js";
 import RouteList from "../../router/route.js";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
+
 const Main = props => {
   return (
     <div>
@@ -23,6 +25,7 @@ const Main = props => {
           <Redirect to="/tang_si" />
         </Switch>
       </div>
+      <ThemeBtn/>
       <Foot />
     </div>
   );
