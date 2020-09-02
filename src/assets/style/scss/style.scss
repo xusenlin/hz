@@ -41,6 +41,15 @@ p{
   line-height: 2em;
 }
 
+input:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+
 #nprogress {
   .spinner {
     width: 100vw;

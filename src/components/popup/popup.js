@@ -28,6 +28,9 @@ class Popup extends React.Component {
         <div className="popup">
           <div className="title">{ this.state.title }</div>
           <div className="content">{ this.state.content }</div>
+          <div className="btn-group">
+            <div className="btn" onClick={()=>{this.closePopup()}}>关闭</div>
+          </div>
         </div>
       </div>
     ) ;

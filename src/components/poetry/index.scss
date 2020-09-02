@@ -13,7 +13,13 @@
         font-weight: bold;
       }
       .author{
+        cursor: pointer;
         font-size: 13px;
+        color: var(--themeColor);
+        opacity: .7;
+        &:hover{
+          opacity: 1;
+        }
       }
       .paragraphs{
         display: flex;

@@ -2,11 +2,13 @@ import React from "react";
 import { yuanQu,favour } from "../../api/yuanQu.js"
 import Poetry from "../../components/poetry/index.js";
 import Paginate from "../../components/paginate/index.js";
+import SearchBtn from "../../components/searchBtn/index.js";
 import {successNotice} from "../../components/notice";
 export default class YuanQu extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
+      keyword:"",
       data:{list:[]}
     };
   }
@@ -14,9 +16,15 @@ export default class YuanQu extends React.Component{
     this.getList()
   }
   getList(pageNum = 1){
-    yuanQu({pageNum}).then(r=>{
+    let keyword = this.state.keyword;
+    yuanQu({pageNum,keyword}).then(r=>{
       this.setState({data:r})
     }).catch(()=>{})
+  }
+  searchResult(keyword){
+    this.setState({keyword},()=>{
+      this.getList()
+    })
   }
   clickFavour(id,index){
     let d = this.state.data;
@@ -35,6 +43,7 @@ export default class YuanQu extends React.Component{
           pageCount={this.state.data.totalPage}
           change={num => {this.getList(num)}}
         />
+        <SearchBtn ok={v=>{this.searchResult(v)}} />
       </div>
     );
   }

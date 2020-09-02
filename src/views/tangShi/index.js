@@ -1,6 +1,7 @@
 import React from "react";
 import { successNotice } from "../../components/notice/index.js"
 import { tangShi,favour } from "../../api/tangShi.js"
+import SearchBtn from "../../components/searchBtn/index.js";
 import Poetry from "../../components/poetry/index.js";
 import Paginate from "../../components/paginate/index.js";
 
@@ -9,16 +10,26 @@ export default class TangShi extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
+      keyword:"",
       data:{list:[]}
     };
   }
   componentDidMount() {
     this.getList()
   }
+  searchResult(keyword){
+    this.setState({keyword},()=>{
+      this.getList()
+    })
+  }
   getList(pageNum = 1){
-    tangShi({pageNum}).then(r=>{
+
+    let keyword = this.state.keyword;
+
+    tangShi({pageNum,keyword}).then(r=>{
       this.setState({data:r})
     }).catch(()=>{})
+
   }
   clickFavour(id,index){
     let d = this.state.data;
@@ -37,6 +48,7 @@ export default class TangShi extends React.Component{
           pageCount={this.state.data.totalPage}
           change={num => {this.getList(num)}}
         />
+        <SearchBtn ok={v=>{this.searchResult(v)}} />
       </div>
     );
   }
