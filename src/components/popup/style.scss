@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
   z-index: 100;
@@ -10,19 +10,21 @@
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  .popup{
+  .popup {
     background: #fff;
     max-width: 800px;
     display: flex;
     max-height: calc(100% - 64px);
     flex-direction: column;
-    box-shadow: 0 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12);
-    .title{
+    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+      0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+      0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    .title {
       flex: 0 0 auto;
       margin: 0;
       padding: 16px 24px;
     }
-    .content{
+    .content {
       flex: 1 1 auto;
       font-size: 14px;
       padding: 8px 24px;
@@ -30,17 +32,17 @@
       text-indent: 2em;
       overflow-y: auto;
     }
-    .btn-group{
+    .btn-group {
       flex: 0 0 auto;
       display: flex;
       padding: 8px;
       align-items: center;
       justify-content: flex-end;
-      .btn{
+      .btn {
         cursor: pointer;
         padding: 6px 10px;
         color: var(--themeColor);
-        &:hover{
+        &:hover {
           background-color: rgba(25, 118, 210, 0.04);
         }
       }

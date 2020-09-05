@@ -1,7 +1,7 @@
 import React from "react";
-import "./style.scss"
+import "./style.scss";
 
-export default class StarBtn extends React.Component{
+export default class StarBtn extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,7 +9,7 @@ export default class StarBtn extends React.Component{
   render() {
     return (
       <div className="star-btn" onClick={this.props.clickBtn}>
-        { this.props.children }
+        {this.props.children}
       </div>
     );
   }

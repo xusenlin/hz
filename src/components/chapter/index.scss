@@ -1,33 +1,33 @@
-.warp{
+.warp {
   margin-top: 48px;
   min-height: calc(100vh - 256px);
-  .chapters{
+  .chapters {
     margin: 20px 0 80px;
     padding: 0;
-    li{
+    li {
       list-style-type: none;
       display: flex;
       align-items: center;
       flex-direction: column;
-      .chapter{
+      .chapter {
         font-weight: bold;
       }
-      .paragraphs{
+      .paragraphs {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         max-width: 90%;
-        .paragraph{
+        .paragraph {
           margin-top: 20px;
-          letter-spacing: .3em;
+          letter-spacing: 0.3em;
           line-height: 2em;
           text-align: left;
           text-indent: 2em;
         }
       }
       &:after {
-        content: '';
+        content: "";
         display: block;
         margin: 40px auto 80px;
         width: 10%;
@@ -36,7 +36,7 @@
         text-align: center;
       }
       &:last-child:after {
-        content: '';
+        content: "";
         margin: 60px auto;
         width: 0;
         height: 0;
@@ -46,5 +46,3 @@
     }
   }
 }
-
-

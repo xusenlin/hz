@@ -25,7 +25,7 @@ const Main = props => {
           <Redirect to="/tang_si" />
         </Switch>
       </div>
-      <ThemeBtn/>
+      <ThemeBtn />
       <Foot />
     </div>
   );

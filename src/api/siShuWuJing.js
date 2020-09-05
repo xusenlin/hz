@@ -17,7 +17,7 @@ export function siShuWuJing(params) {
  */
 export function favour(params) {
   return request({
-    closeLoading:true,
+    closeLoading: true,
     url: "/sswj/favour",
     method: "get",
     params: params

@@ -13,6 +13,6 @@ ReactDOM.render(<App />, document.getElementById("root"));
 serviceWorker.unregister();
 
 let theme = localStorage.getItem("THEME");
-if(theme && theme.length === 7){
-  document.documentElement.style.setProperty("--themeColor",theme)
+if (theme && theme.length === 7) {
+  document.documentElement.style.setProperty("--themeColor", theme);
 }

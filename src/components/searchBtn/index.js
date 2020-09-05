@@ -1,9 +1,8 @@
 import React from "react";
-import "./style.scss"
-import { searchIcon } from "../svgIcon/icon.js"
+import "./style.scss";
+import { searchIcon } from "../svgIcon/icon.js";
 
-
-export default class searchBtn extends React.Component{
+export default class searchBtn extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -11,7 +10,7 @@ export default class searchBtn extends React.Component{
   render() {
     return (
       <div className="search-btn">
-        { searchIcon("30px","30px") }
+        {searchIcon("30px", "30px")}
         <div className="search-input">
           <input
             type="text"
@@ -19,7 +18,7 @@ export default class searchBtn extends React.Component{
             onKeyDown={e => {
               let evt = window.event || e;
               if (evt.keyCode === 13) {
-                this.props.ok(e.target.value)
+                this.props.ok(e.target.value);
               }
             }}
           />

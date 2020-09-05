@@ -17,7 +17,7 @@ export function tangShi(params) {
  */
 export function favour(params) {
   return request({
-    closeLoading:true,
+    closeLoading: true,
     url: "/ts/favour",
     method: "get",
     params: params

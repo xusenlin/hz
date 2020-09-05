@@ -1,27 +1,27 @@
-.warp{
+.warp {
   margin-top: 48px;
   min-height: calc(100vh - 256px);
-  .poetry{
+  .poetry {
     margin: 20px 0 80px;
     padding: 0;
-    li{
+    li {
       list-style-type: none;
       display: flex;
       align-items: center;
       flex-direction: column;
-      .title{
+      .title {
         font-weight: bold;
       }
-      .author{
+      .author {
         cursor: pointer;
         font-size: 13px;
         color: var(--themeColor);
-        opacity: .7;
-        &:hover{
+        opacity: 0.7;
+        &:hover {
           opacity: 1;
         }
       }
-      .paragraphs{
+      .paragraphs {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -30,23 +30,23 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 40px;
-        .paragraph{
+        .paragraph {
           margin: 20px 0;
-          letter-spacing: .3em;
+          letter-spacing: 0.3em;
         }
       }
       &:after {
-        content: '';
+        content: "";
         display: block;
         margin: 40px auto 80px;
         width: 10%;
-        opacity: .1;
+        opacity: 0.1;
         height: 2px;
         background: var(--themeColor);
         text-align: center;
       }
       &:last-child:after {
-        content: '';
+        content: "";
         margin: 60px auto;
         width: 0;
         height: 0;
@@ -56,5 +56,3 @@
     }
   }
 }
-
-

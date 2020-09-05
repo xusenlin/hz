@@ -17,7 +17,7 @@ export function songShi(params) {
  */
 export function favour(params) {
   return request({
-    closeLoading:true,
+    closeLoading: true,
     url: "/ss/favour",
     method: "get",
     params: params

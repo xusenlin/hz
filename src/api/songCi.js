@@ -17,7 +17,7 @@ export function songCi(params) {
  */
 export function favour(params) {
   return request({
-    closeLoading:true,
+    closeLoading: true,
     url: "/sc/favour",
     method: "get",
     params: params

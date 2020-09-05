@@ -17,7 +17,7 @@ export function lunYu(params) {
  */
 export function favour(params) {
   return request({
-    closeLoading:true,
+    closeLoading: true,
     url: "/ly/favour",
     method: "get",
     params: params

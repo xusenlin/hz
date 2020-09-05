@@ -17,7 +17,7 @@ export function yuanQu(params) {
  */
 export function favour(params) {
   return request({
-    closeLoading:true,
+    closeLoading: true,
     url: "/yq/favour",
     method: "get",
     params: params
