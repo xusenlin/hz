@@ -9,7 +9,8 @@ export default function About() {
           padding: "20px",
           textAlign: "left",
           margin: "0 auto",
-          maxWidth: "500px"
+          maxWidth: "500px",
+          minHeight: "calc(100vh - 178px)"
         }}
       >
         <p>这是一个公益网站，没用任何广告，PC和移动端都有着良好的阅读体验。</p>

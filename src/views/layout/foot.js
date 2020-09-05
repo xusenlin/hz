@@ -11,9 +11,7 @@ export default class Foot extends React.Component {
     return (
       <div className="container foot">
         © 2020 - 2020
-        <a href="https://github.com/chinese-poetry/chinese-poetry">
-          {SiteName}
-        </a>
+        <a href="https://github.com/xusenlin/hzzm">{SiteName}</a>
         Powered By
         <a href="https://github.com/chinese-poetry/chinese-poetry">
           ChinesePoetry
