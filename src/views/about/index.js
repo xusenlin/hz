@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
+    <div style={{ marginTop: 48 }}>
       <h1>关于</h1>
       <div
         style={{
